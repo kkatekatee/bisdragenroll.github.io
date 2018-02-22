@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Mongoose
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130920
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="w3.css">
+<style type="text/css">
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+#div1 {
+    float: left;
+    width: 500px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+
+}
+
+#div2 {
+    float: left;
+    width: 500px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+
+
+}
+
+#drag1 {
+    float: left;
+    width: 70px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: gray;
+}
+
+#drag2 {
+    float: left;
+    width: 70px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: gray;
+}
+
+#drag3 {
+    float: left;
+    width: 70px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: gray;
+}
+
+#drag4 {
+    float: left;
+    width: 70px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: auto;
+    background-color: gray;
+}
+
+</style>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<script>
+function allowDrop(ev) {
+		ev.preventDefault();
+}
+
+function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<body>
+<div id="header-wrapper">
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="index.html"><strong>BIS DRAG ENROLL</strong></a></h1>
+	</div>
+  <div id="menu">
+
+			<li><a href="index.html" accesskey="5" title="">Log In	</a></li>
+      <li><a href="index.html" accesskey="5" title="">Log Out	</a></li>
+		</ul>
+	</div>
+</div></div>
+<div id="page" class="container">
+	  <div class="content">
+			<br><br><br><br>
+		<form action="search.php" method="post" name="search">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;<i id="search" class="fa fa-search w3-large w3-text-teal"></i>
+  SEARCH : <input style="width:25%" type="text" size="20"  name="search" /><a> please enter</a>
+</form>
+		<center><table>
+<tr>
+<td>
+		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<h4 class="w3-head">Subjects</h4>
+
+			<ul id="subject">
+
+<!-- 01-->
+		<div style="width:20%" class="w3-small"draggable="true" ondragstart="drag(event)" id="drag1">
+			<h5>477-101</h5>
+	<p class="w3-small">FOUNDATIONS OF INFORMATION SYSTEM
+
+	</p>  <span id="sec">Section</span>
+		<select style="width:40px" name="option" id="number">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+	</select>
+	<button onclick="document.getElementById('id01').style.display='block'"class="fa fa-search"></button>
+	<div id="id01" class="w3-modal w3-animate-opacity w3-container">
+		<div class="w3-grey w3-modal-content w3-card-4">
+			 <h2 class="w3-white">477-101 : FOUNDATIONS OF INFORMATION SYSTEM</h2>
+			 <h5 class="w3-black w3-left w3-padding">section</h5></div></div>
+	<button class="fa fa-trash"></button>
+	<p><button onclick="clickCounter()" type="button" class="fa fa-arrow-right"></button></p>
+
+	</div>
+<!-- 01-->
+<!-- 02-->
+	<div style="width:20%" class="w3-small"draggable="true" ondragstart="drag(event)" id="drag2">
+		<h5>477-201</h5>
+	<p class="w3-small">COMPUTER PROGRAMMING
+
+	</p>  <span id="sec">Section</span>
+	<select style="width:40px" name="option" id="number">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	</select>
+	<button onclick="document.getElementById('id02').style.display='block'"class="fa fa-search"></button>
+	<div id="id02" class="w3-modal w3-animate-opacity w3-container">
+		<div class="w3-grey w3-modal-content w3-card-4">
+			 <h2 class="w3-white">477-201 : COMPUTER PROGRAMMING</h2>
+			 <h5 class="w3-black w3-left w3-padding">section</h5></div></div>
+	<button class="fa fa-trash"></button>
+	<p><button onclick="clickCounter()" type="button" class="fa fa-arrow-right"></button></p>
+	</div>
+<!-- 02-->
+<!-- 03-->
+	<div style="width:20%" class="w3-small"draggable="true" ondragstart="drag(event)" id="drag3">
+		<h5>477-301</h5>
+	<p class="w3-small">SYSTEM ANALYSIS & DESIGN
+
+	</p>  <span id="sec">Section</span>
+	<select style="width:40px" name="option" id="number">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	</select>
+  <button onclick="document.getElementById('id02').style.display='block'"class="fa fa-search"></button>
+	<div id="id02" class="w3-modal w3-animate-opacity w3-container">
+		<div class="w3-grey w3-modal-content w3-card-4">
+			 <h2 class="w3-white">477-301 : SYSTEM ANALYSIS & DESIGN</h2>
+			 <h5 class="w3-black w3-left w3-padding">section</h5></div></div>
+	<button class="fa fa-trash"></button>
+	<p><button onclick="clickCounter()" type="button" class="fa fa-arrow-right"></button></p>
+	</div>
+<!-- 03-->
+<!-- 04-->
+	<div style="width:20%" class="w3-small" draggable="true" ondragstart="drag(event)" id="drag3">
+		<h5>477-402</h5>
+	<p class="w3-small">PROJECT IN INFOR SYSTEM I
+
+	</p>  <span id="sec">Section</span>
+	<select style="width:40px" name="option" id="number">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	</select>
+	<button class="fa fa-search"></button>
+	<button class="fa fa-trash"></button>
+	<p><button onclick="clickCounter()" type="button" class="fa fa-arrow-right"></button></p>
+	</div>
+<!-- 04-->
+</div></ul> </td>
+
+<td>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+<h4 class="w3-headerv"><span class="fa fa-bars"></span>Drop here</h4></div>
+
+
+</td>
+</tr>
+
+</table>
+
+<div id="copyright">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>
